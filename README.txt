@@ -5,6 +5,7 @@ Technology Add-on for NETSCOUT(R) Arbor Edge Defense (AED) devices and NETSCOUT(
 -->
 
 CHANGELOG
+0.1.1 - Extended with additional field extractions
 0.1.0 - Initial Release
 
 INSTALLATION
