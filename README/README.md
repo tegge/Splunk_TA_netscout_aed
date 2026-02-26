@@ -5,6 +5,7 @@ Technology Add-on for NETSCOUT(R) Arbor Edge Defense (AED) devices and NETSCOUT(
 -->
 
 ## CHANGELOG
+   0.2.0 - Added CIM Compliance with additional Fieldextractions, Aliases, Evals
    0.1.1 - Extended with additional field extractions
    0.1.0 - Initial Release
 
@@ -14,16 +15,16 @@ Technology Add-on for NETSCOUT(R) Arbor Edge Defense (AED) devices and NETSCOUT(
 
 ### Prerequisites
 
-   + Splunk(R) Enterprise v7.x
+   + Splunk(R) Enterprise v7.x or later
    + Arbor Edge Defense or Arbor APS v6.2 or later
 
 ### Installation Summary
 
-   1. Configure Splunk Enterprise to accept network monitoring input as described in the [Splunk documentation](https://docs.splunk.com/Documentation/Splunk/7.2.6/Data/Monitornetworkports).
+   1. Configure Splunk Enterprise to accept network monitoring input as described in the [Splunk documentation](https://help.splunk.com/en/data-management/get-data-in/get-data-into-splunk-enterprise/10.2/get-data-from-network-sources/get-data-from-tcp-and-udp-ports#configure-a-udp-network-input-0)
 
-      Splunk recommends using a [Splunk forwarder](https://docs.splunk.com/Documentation/Forwarder/7.3.0/Forwarder/HowtoforwarddatatoSplunkEnterprise) to avoid possible disruptions (Splunk restarts) with the syslog stream. The NETSCOUT AED/APS add-on relies on sourcetype being set to `netscout:aed`. 
+      Splunk recommends using a [Splunk forwarder](https://help.splunk.com/en/splunk-enterprise/get-started/get-data-in/10.2/introduction/use-forwarders-to-get-data-into-splunk-enterprise) to avoid possible disruptions (Splunk restarts) with the syslog stream. The NETSCOUT AED/APS add-on relies on sourcetype being set to `netscout:aed`. 
 
-      You can set up the network input in the Splunk UI or by using an [inputs.conf](https://docs.splunk.com/Documentation/Splunk/7.2.6/Admin/Inputsconf) file. For example:
+      You can set up the network input in the Splunk UI or by using an [inputs.conf](https://help.splunk.com/en/data-management/splunk-enterprise-admin-manual/10.2/configuration-file-reference/10.2.0-configuration-file-reference/inputs.conf) file. For example:
 
       ```
       [udp://514]

@@ -2,7 +2,16 @@
 []
 access = read : [ * ], write : [ admin, power ]
 
+[eventtypes]
+export = system
+
+[macros]
+export = system
+
 [props]
+export = system
+
+[tags]
 export = system
 
 [transforms]
