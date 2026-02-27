@@ -5,6 +5,7 @@ Technology Add-on for NETSCOUT(R) Arbor Edge Defense (AED) devices and NETSCOUT(
 -->
 
 CHANGELOG
+0.2.0 - Add CIM Compliance for well known events
 0.1.1 - Extended with additional field extractions
 0.1.0 - Initial Release
 
@@ -12,7 +13,7 @@ INSTALLATION
 Install this Splunk technology add-on on your indexers, heavy forwarders, and search heads. The NETSCOUT AED Add-on provides configurations for search-time field extractions.
 
 Prerequisites:
-* Splunk(R) Enterprise v7.x
+* Splunk(R) Enterprise v7.x or later
 * Arbor Edge Defense and Arbor APS v6.2 or later
 
 For detailed instructions, see /README/README.md.
